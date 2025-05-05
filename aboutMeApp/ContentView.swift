@@ -10,10 +10,10 @@ import SwiftUI
 struct ContentView: View {
     @State private var showText: [Bool] = Array(repeating: false, count: 6)
     let images = [
-        "Mirror1 1", "Mirror1 1", "Mirror1 1", "Mirror1 1", "Mirror1 1", "Mirror1 1"
+        "Image1", "Image6", "Image5", "Image4", "Image3", "Image2"
     ]
     let texts = [
-        "Text for Image 1","Text for Image 2", "Text for Image 3", "Text for Image 4", "Text for Image 5", "Text for Image 6"
+        "I love cinematography/photograpy!","Concerts are my love language. CB is my fav!!", "I enjoy making balloon decor, it's very calming and a fun way to be creative.", "I enjoy spending time with friends anf family.", "Interning in DC at the House of Representatives was an amazing experience/ core memory.", "I love to travel, first trip to NY!"
     ]
     var body: some View {
         ScrollView {
@@ -65,7 +65,7 @@ struct ContentView: View {
                     Button(action: {
                     showText[index].toggle()
                     }) {
-                        Text("Show Info")
+                        Text("Press Me!")
                             .padding(8)
                             .background(Color.purple)
                             .foregroundColor(.white)
@@ -103,7 +103,7 @@ struct ContentView: View {
                        Button(action: {
                             showText[index].toggle()
                         }) {
-                            Text("Show Info")
+                            Text("Press Me!")
                                 .padding(8)
                                 .background(Color.purple)
                                 .foregroundColor(.white)
